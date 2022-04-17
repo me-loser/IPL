@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charser="utf-8">
+        <title>RR Players</title>
+        <style>
+            #player{
+                background: linear-gradient(to bottom right,#1e4cac,#bf3895,white);
+            }
+            #player1{
+                padding-top: 20px;
+                margin-bottom: 50px;
+                text-align: center;
+                border-bottom: 3px solid black;
+                padding-bottom: 40px;
+               
+            }
+            #player1 div{
+                margin: 5px;
+            }
+            #player2{
+                margin-bottom: 30px;
+                text-align: center;
+                
+            }
+            #player2 div{
+                margin: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="player">
+        <div id="player1"><div id="name1">Name : </div><div id="img1"></div><div id="team1">Team : </div><div id="type1">Type : </div><div id="born1">DOB : </div><div id="age1">Age : </div><div id="nationalside1">National Side : </div><div id="battingstyle1">Batting Style : </div><div id="bowling1">Bowling : NULL</div><div id="matchplayed1">Matches Played : </div><div id="inningsbatted1">Innings Batted : </div><div id="notouts1">NotOuts : </div><div id="runsscored1"> Runs Scored : </div><div id="highestinnscore1">Highest Inn Score : </div><div id="100s1">100s : </div><div id="50s1"> 50s : </div><div id="4s1">4s : </div><div id="6s1">6s : </div><div id="battingavg1">Batting Avg : </div><div id="battingsr1">Batting SR : </div><div id="catchestaken1">Catches Taken : </div><div id="stumpingsmade1">Stumpings Made : </div><div id="Ducks1">Ducks : </div><div id="InningsBowled1">Innings Bowled : </div><div id="Overs1">Overs : </div><div id="Maidens1">Maidens : </div><div id="RunsConceded1">Runs Conceded : </div><div id="Wickets1">Wickets</div><div id="Best1">Best : </div><div id="3s1">3s : </div><div id="5s1">5s : </div><div id="BowlingAVG1">Bowling AVG : </div><div id="EconomyRate1">Economy Rate : </div><div id="BowlingSR1">Bowling SR : </div><div id="MatchesPlayed1"> Matches Played : </div></div>
+        
+        <div id="player2"><div id="name2">Name : </div><div id="img2"></div><div id="team2">Team : </div><div id="type2">Type : </div><div id="born2">DOB : </div><div id="age2">Age : </div><div id="nationalside2">National Side : </div><div id="battingstyle2">Batting Style : </div><div id="bowling2">Bowling : </div><div id="matchplayed2">Matches Played : </div><div id="inningsbatted2">Innings Batted : </div><div id="notouts2">NotOuts : </div><div id="runsscored2"> Runs Scored : </div><div id="highestinnscore2">Highest Inn Score : </div><div id="100s2">100s : </div><div id="50s2"> 50s : </div><div id="4s2">4s : </div><div id="6s2">6s : </div><div id="battingavg2">Batting Avg : </div><div id="battingsr2">Batting SR : </div><div id="catchestaken2">Catches Taken : </div><div id="stumpingsmade2">Stumpings Made : </div><div id="Ducks2">Ducks : </div><div id="InningsBowled2">Innings Bowled : </div><div id="Overs1">Overs : </div><div id="Maidens2">Maidens : </div><div id="RunsConceded2">Runs Conceded : </div><div id="Wickets2">Wickets</div><div id="Best2">Best : </div><div id="3s2">3s : </div><div id="5s2">5s : </div><div id="BowlingAVG2">Bowling AVG : </div><div id="EconomyRate2">Economy Rate : </div><div id="BowlingSR2">Bowling SR : </div><div id="MatchesPlayed2"> Matches Played : </div></div>
+            </div>
+        
+        
+        
+        
+        
+       
+        
+        <script>
+            fetch('DATA/playerData.json')
+            .then(function(response){
+                return response.json();
+            }).then(function(playerData){
+                for(var i=0;i<playerData.length;i++){
+                         
+                    if(playerData[i].Team == 'RR'){
+                        var j=i-3;
+                var name = document.getElementById("name"+j);  
+                        name.innerHTML += playerData[i].Name + "<br/>";
+                var img = document.getElementById("img"+j); 
+                       img.innerHTML += "<img height='200px' src='"+playerData[i].ImgURL+"'><br/>";
+                        
+                        var team = document.getElementById("team"+j);  
+                        team.innerHTML += playerData[i].Team + "<br/>";
+                        
+                        var type = document.getElementById("type"+j);  
+                        type.innerHTML += playerData[i].Type + "<br/>";
+                        
+                        var born = document.getElementById("born"+j);  
+                        born.innerHTML += playerData[i].Born + "<br/>";
+                        
+                        var age = document.getElementById("age"+j);  
+                        age.innerHTML += playerData[i].Age + "<br/>";
+                        
+                        var nationalside = document.getElementById("nationalside"+j);  
+                        nationalside.innerHTML += playerData[i]['National Side'] + "<br/>";
+                        
+                        var battingstyle = document.getElementById("battingstyle"+j);  
+                        battingstyle.innerHTML += playerData[i]['Batting Style'] + "<br/>";
+                        var bowling = document.getElementById("bowling"+j);  
+                        bowling.innerHTML += playerData[i]['Bowling'] + "<br/>";
+                        
+                        var matchplayed = document.getElementById("matchplayed"+j);  
+                        matchplayed.innerHTML += playerData[i].MatchPlayed + "<br/>";
+                        
+                        var inningsbatted = document.getElementById("inningsbatted"+j);  
+                        inningsbatted.innerHTML += playerData[i].InningsBatted + "<br/>";
+                        
+                        var notouts = document.getElementById("notouts"+j);  
+                        notouts.innerHTML += playerData[i].NotOuts + "<br/>";
+                        
+                        var runsscored = document.getElementById("runsscored"+j);  
+                        runsscored.innerHTML += playerData[i].RunsScored + "<br/>";
+                        
+                        var highestinnscore = document.getElementById("highestinnscore"+j);
+                        highestinnscore.innerHTML += playerData[i].HighestInnScore + "<br/>";
+                        
+                        var hundreds = document.getElementById("100s"+j);  
+                        hundreds.innerHTML += playerData[i]['100s'] + "<br/>";
+                        
+                        var fiftys = document.getElementById("50s"+j);  
+                        fiftys.innerHTML += playerData[i]['50s'] + "<br/>";
+                        
+                        var fours = document.getElementById("4s"+j);  
+                        fours.innerHTML += playerData[i]['4s'] + "<br/>";
+                        
+                       var sixes = document.getElementById("6s"+j);  
+                            sixes.innerHTML += playerData[i]['6s'] + "<br/>";
+                        
+                       var battingavg = document.getElementById("battingavg"+j);  
+                            battingavg.innerHTML += playerData[i].BattingAVG + "<br/>";
+                        
+                        var battingsr = document.getElementById("battingsr"+j);  
+                            battingsr.innerHTML += playerData[i].BattingSR + "<br/>";
+                        
+                        var catchestaken = document.getElementById("catchestaken"+j);  
+                            catchestaken.innerHTML += playerData[i].CatchesTaken + "<br/>";
+                        
+                        var stumpingsmade = document.getElementById("stumpingsmade"+j);  
+                            stumpingsmade.innerHTML += playerData[i].StumpingsMade + "<br/>";
+                        
+                        var Ducks = document.getElementById("Ducks"+j);  
+                            Ducks.innerHTML += playerData[i].Ducks + "<br/>";
+                        
+                        var InningsBowled = document.getElementById("InningsBowled"+j);  
+                            InningsBowled.innerHTML += playerData[i].InningsBowled + "<br/>";
+                        
+                        var Overs = document.getElementById("Overs"+j);  
+                            Overs.innerHTML += playerData[i].Overs + "<br/>";
+                        
+                        var Maidens = document.getElementById("Maidens"+j);  
+                            Maidens.innerHTML += playerData[i].Maidens + "<br/>";
+                        
+                        var RunsConceded = document.getElementById("RunsConceded"+j);  
+                            RunsConceded.innerHTML += playerData[i].RunsConceded + "<br/>";
+                        
+                        var Wickets = document.getElementById("Wickets"+j);  
+                            Wickets.innerHTML += playerData[i].Wickets + "<br/>";
+                        
+                        var Best = document.getElementById("Best"+j);  
+                            Best.innerHTML += playerData[i].Best + "<br/>";
+                        
+                        var threes = document.getElementById("3s"+j);  
+                            threes.innerHTML += playerData[i]['3s'] + "<br/>";
+                        
+                        var fives = document.getElementById("5s"+j);  
+                            fives.innerHTML += playerData[i]['5s'] + "<br/>";
+                        
+                        var BowlingAVG = document.getElementById("BowlingAVG"+j);  
+                            BowlingAVG.innerHTML += playerData[i].BowlingAVG + "<br/>";
+                        
+                        var EconomyRate = document.getElementById("EconomyRate"+j);  
+                            EconomyRate.innerHTML += playerData[i].EconomyRate + "<br/>";
+                        
+                        var BowlingSR = document.getElementById("BowlingSR"+j);  
+                            BowlingSR.innerHTML += playerData[i].BowlingSR + "<br/>";
+                        
+                        var MatchedPlayed = document.getElementById("MatchesPlayed"+j);  
+                            MatchedPlayed.innerHTML += playerData[i].MatchedPlayed + "<br/>";
+                        
+                   
+                    }         
+                    
+                }
+                })
+        </script>
+    </body>
+</html>

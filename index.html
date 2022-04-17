@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IPL 2022</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+         <nav class="header">
+             <img src="PHOTOS/IPL_Logo.png" id="logo" onclick="officialSite()" target="_blank">
+             <a href="#headingoftable" >POINTS TABLE</a>
+             <a href="#playerdata">PLAYERS</a>
+        </nav>
+        <div id="headingoftable">STANDINGS</div>
+        <div class="pointsTable">
+            <div id="topics"><div id="Sno" >S. No.</div><div id="logo">Logo</div><div id="Team" >Team</div><div id="pld">Played</div><div id="won">Won</div><div id="lost">Lost</div><div id="tied">Tied</div><div id="nr">NR</div><div id="netrr">Net NR</div><div id="for">For</div><div id="against">Against</div><div id="pts"></div>Points<div id="form">Form</div></div>
+            <div id="div1"><div id="Sno1" class="Sno"></div><div id="logo1"><img src="PHOTOS/RR.png" width="40" height="40"></div><div id="Team1" class="Team"></div><div id="pld1"></div><div id="won1"></div><div id="lost1"></div><div id="tied1"></div><div id="nr1"></div><div id="netrr1"></div><div id="for1"></div><div id="against1"></div><div id="pts1"></div><div id="form1"></div></div>
+            <div id="div2"><div id="Sno2"></div><div id="logo2"><img src="PHOTOS/KKR.png" width="40" height="40"></div><div id="Team2"></div><div id="pld2"></div><div id="won2"></div><div id="lost2"></div><div id="tied2"></div><div id="nr2"></div><div id="netrr2"></div><div id="for2"></div><div id="against2"></div><div id="pts2"></div><div id="form2"></div></div>
+            <div id="div3"><div id="Sno3"></div><div id="logo3"><img src="PHOTOS/GT.png" width="40" height="40"></div><div id="Team3"></div><div id="pld3"></div><div id="won3"></div><div id="lost3"></div><div id="tied3"></div><div id="nr3"></div><div id="netrr3"></div><div id="for3"></div><div id="against3"></div><div id="pts3"></div><div id="form3"></div></div>
+            <div id="div4"><div id="Sno4"></div><div id="logo4"><img src="PHOTOS/DC.png" width="40" height="40"></div><div id="Team4"></div><div id="pld4"></div><div id="won4"></div><div id="lost4"></div><div id="tied4"></div><div id="nr4"></div><div id="netrr4"></div><div id="for4"></div><div id="against4"></div><div id="pts4"></div><div id="form4"></div></div>
+            <div id="div5"><div id="Sno5"></div><div id="logo5"><img src="PHOTOS/LSG.png" width="40" height="40"></div><div id="Team5"></div><div id="pld5"></div><div id="won5"></div><div id="lost5"></div><div id="tied5"></div><div id="nr5"></div><div id="netrr5"></div><div id="for5"></div><div id="against5"></div><div id="pts5"></div><div id="form5"></div></div>
+            <div id="div6"><div id="Sno6"></div><div id="logo6"><img src="PHOTOS/RCB.png" width="40" height="40"></div><div id="Team6"></div><div id="pld6"></div><div id="won6"></div><div id="lost6"></div><div id="tied6"></div><div id="nr6"></div><div id="netrr6"></div><div id="for6"></div><div id="against6"></div><div id="pts6"></div><div id="form6"></div></div>
+            <div id="div7"><div id="Sno7"></div><div id="logo7"><img src="PHOTOS/PBKS.png" width="40" height="40"></div><div id="Team7"></div><div id="pld7"></div><div id="won7"></div><div id="lost7"></div><div id="tied7"></div><div id="nr7"></div><div id="netrr7"></div><div id="for7"></div><div id="against7"></div><div id="pts7"></div><div id="form7"></div></div>
+            <div id="div8"><div id="Sno8"></div><div id="logo8"><img src="PHOTOS/CSK.png" width="40" height="40"></div><div id="Team8"></div><div id="pld8"></div><div id="won8"></div><div id="lost8"></div><div id="tied8"></div><div id="nr8"></div><div id="netrr8"></div><div id="for8"></div><div id="against8"></div><div id="pts8"></div><div id="form8"></div></div>
+            <div id="div9"><div id="Sno9"></div><div id="logo9"><img src="PHOTOS/MI.png" width="40" height="40"></div><div id="Team9"></div><div id="pld9"></div><div id="won9"></div><div id="lost9"></div><div id="tied9"></div><div id="nr9"></div><div id="netrr9"></div><div id="for9"></div><div id="against9"></div><div id="pts9"></div><div id="form9"></div></div>
+            <div id="div10"><div id="Sno10"></div><div id="logo10"><img src="PHOTOS/SRH.png" width="40" height="40"></div><div id="Team10"></div><div id="pld10"></div><div id="won10"></div><div id="lost10"></div><div id="tied10"></div><div id="nr10"></div><div id="netrr10"></div><div id="for10"></div><div id="against10"></div><div id="pts10"></div><div id="form10"></div></div>
+        
+        </div>
+        <div id="playerdata">PLAYER STATISTICS</div>
+        <div id="playernames">
+        <div onclick="RR()" class="prr"><li>RR</li><div id="prr1" onclick="rr()"></div><div id="prr2" onclick="rr()"></div></div>
+        
+        
+        <div onclick="KKR()" class="pkkr"><li>KKR</li><div id="pkkr1" onclick="kkr()"></div><div id="pkkr2" onclick="kkr()"></div></div>
+        
+        
+        <div onclick="GT()" class="pgt"><li>GT</li><div id="pgt1" onclick="gt()"></div><div id="pgt2" onclick="gt()"></div></div>
+        
+        
+        <div onclick="DC()" class="pdc"> <li>DC</li><div id="pdc1" onclick="dc()"></div><div id="pdc2" onclick="dc()"></div></div>
+        
+        
+        <div onclick="LSG()" class="plsg"><li>LSG</li><div id="plsg1" onclick="lsg()"></div><div id="plsg2" onclick="lsg()"></div></div>
+        
+        
+        <div onclick="RCB()" class="prcb"><li>RCB</li><div id="prcb1" onclick="rcb()"></div><div id="prcb2" onclick="rcb()"></div></div>
+        
+        
+        <div onclick="PBKS()" class="ppbks"><li>PBKS</li><div  id="ppbks1" onclick="pbks"></div><div  id="ppbks2" onclick="pbks"></div></div>
+        
+        
+        <div onclick="CSK()" class="pcsk"><li>CSK</li><div id="pcsk1" onclick="csk()"></div><div id="pcsk2" onclick="csk()"></div></div>
+        
+        
+        <div onclick="MI()" class="pmi"><li>MI</li><div id="pmi1" onclick="mi()"></div><div id="pmi2" onclick="mi()"></div></div>
+        
+        
+        <div onclick="SRH()" class="psrh"><li>SRH</li><div id="psrh1" onclick="srh()"></div> <div id="psrh2" onclick="srh()"></div></div>
+        </div>
+        <script>
+            fetch('Pages/DATA/teamData.json')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                appendData(data);
+            })
+            .catch(function (err) {
+                console.log('error: ' + err);
+            });
+        function appendData(data) {
+            var mainContainer = document.getElementById("pointsTable");
+            for (var i = 0; i < data.length; i++) {
+                var j=i+1;
+                var Sno = document.getElementById("Sno"+j);
+                Sno.innerHTML += data[i].Sno;
+                
+                var Team = document.getElementById("Team"+j);
+                Team.innerHTML += data[i].Team;
+                
+                var pld = document.getElementById("pld"+j);
+                pld.innerHTML += data[i].Pld;
+                
+                var won = document.getElementById("won"+j);
+                won.innerHTML += data[i].Won;
+                
+                var lost = document.getElementById("lost"+j);
+                lost.innerHTML += data[i].Lost;
+                
+                var tied = document.getElementById("tied"+j);
+                tied.innerHTML += data[i].Tied;
+                
+                var nr = document.getElementById("nr"+j);
+                nr.innerHTML += data[i].NR;
+                
+                var netrr = document.getElementById("netrr"+j);
+                netrr.innerHTML += data[i]['Net RR'];
+                
+                var For = document.getElementById("for"+j);
+                For.innerHTML += data[i].For;
+                
+                var against = document.getElementById("against"+j);
+                against.innerHTML += data[i].Against;
+                
+                var pts = document.getElementById("pts"+j);
+                pts.innerHTML += data[i].Pts;
+                
+                var form = document.getElementById("form"+j);
+                form.innerHTML += data[i].Form;
+                
+        }
+        }
+        function RR(){ 
+        fetch('Pages/DATA/playerData.json')
+            .then(function(response){
+            return response.json();
+        }).then(function(playerData){
+            for(var i=0;i<playerData.length;i++){
+                if(playerData[i].Team == 'RR'){
+                   
+                  var j=i-3;
+                    console.log(playerData[i].Name);
+                document.getElementById("prr"+j).innerHTML +=playerData[i].Name + "<br/>";
+                    
+                  
+                   
+            }
+            }
+
+        })
+        }
+        
+            function KKR(){ 
+        fetch('Pages/DATA/playerData.json')
+            .then(function(response){
+            return response.json();
+        }).then(function(playerData){
+            for(var i=0;i<playerData.length;i++){
+                if(playerData[i].Team == 'KKR'){
+                    var j=i-11;
+                document.getElementById("pkkr"+j).innerHTML +=playerData[i].Name + "<br/>";
+            }
+            }
+            }
+            )}
+            
+            function GT(){ 
+        fetch('Pages/DATA/playerData.json')
+            .then(function(response){
+            return response.json();
+        }).then(function(playerData){
+            for(var i=0;i<playerData.length;i++){
+                if(playerData[i].Team == 'GT'){
+                    var j=i-17;
+                document.getElementById("pgt"+j).innerHTML +=playerData[i].Name + "<br/>";
+            }
+            }
+            }
+            )}
+            
+            function DC(){ 
+        fetch('Pages/DATA/playerData.json')
+            .then(function(response){
+            return response.json();
+        }).then(function(playerData){
+            for(var i=0;i<playerData.length;i++){
+                if(playerData[i].Team == 'DC'){
+                    var j=i-13;
+                document.getElementById("pdc"+j).innerHTML +=playerData[i].Name + "<br/>";
+            }
+            }
+            }
+            )}
+            
+            function LSG(){ 
+        fetch('Pages/DATA/playerData.json')
+            .then(function(response){
+            return response.json();
+        }).then(function(playerData){
+            for(var i=0;i<playerData.length;i++){
+                if(playerData[i].Team == 'LSG'){
+                    var j=i-15;
+                document.getElementById("plsg"+j).innerHTML +=playerData[i].Name + "<br/>";
+            }
+            }
+            }
+            )}
+            
+            function RCB(){ 
+        fetch('Pages/DATA/playerData.json')
+            .then(function(response){
+            return response.json();
+        }).then(function(playerData){
+            for(var i=0;i<playerData.length;i++){
+                if(playerData[i].Team == 'RCB'){
+                    var j=i-5;
+                document.getElementById("prcb"+j).innerHTML +=playerData[i].Name + "<br/>";
+
+            }
+            }
+            }
+            )}
+            
+            function PBKS(){ 
+        fetch('Pages/DATA/playerData.json')
+            .then(function(response){
+            return response.json();
+        }).then(function(playerData){
+            for(var i=0;i<playerData.length;i++){
+                if(playerData[i].Team == 'PBKS'){
+                    var j=i+1;
+                document.getElementById("ppbks"+j).innerHTML +=playerData[i].Name + "<br/>";
+            }
+            }
+            }
+            )}
+            
+            function CSK(){ 
+        fetch('Pages/DATA/playerData.json')
+            .then(function(response){
+            return response.json();
+        }).then(function(playerData){
+            for(var i=0;i<playerData.length;i++){
+                if(playerData[i].Team == 'CSK'){
+                    var j=i-9;
+                document.getElementById("pcsk"+j).innerHTML +=playerData[i].Name + "<br/>";
+            }
+            }
+            }
+            )}
+            
+            function MI(){ 
+        fetch('Pages/DATA/playerData.json')
+            .then(function(response){
+            return response.json();
+        }).then(function(playerData){
+            for(var i=0;i<playerData.length;i++){
+                if(playerData[i].Team == 'MI'){
+                    var j=i-7;
+                document.getElementById("pmi"+j).innerHTML +=playerData[i].Name + "<br/>";        }
+            }
+            }
+            )}
+            
+            function SRH(){ 
+        fetch('Pages/DATA/playerData.json')
+            .then(function(response){
+            return response.json();
+        }).then(function(playerData){
+            for(var i=0;i<playerData.length;i++){
+                if(playerData[i].Team == 'SRH'){
+                    var j=i-1;
+                document.getElementById("psrh"+j).innerHTML +=playerData[i].Name + "<br/>";
+            }
+            }
+            }
+            )}
+            function rr(){
+                window.location.href = "Pages/rr.html";
+            }
+            function kkr(){
+                window.location.href = "Pages/kkr.html";
+            }
+            function rcb(){
+                window.location.href = "Pages/rcb.html";
+            }
+            function csk(){
+                window.location.href = "Pages/csk.html";
+            }
+            function mi(){
+                window.location.href = "Pages/mi.html";
+            }
+            function lsg(){
+                window.location.href = "Pages/lsg.html";
+            }
+            function dc(){
+                window.location.href = "Pages/dc.html";
+            }
+            
+            function gt(){
+                window.location.href = "Pages/gt.html";
+            }
+            function pbks(){
+                window.location.href = "Pages/pbks.html";
+            }
+            function srh(){
+                window.location.href = "Pages/srh.html";
+            }
+            function pointsTable(){
+                window.location.href = "#headingoftable";
+            }
+            function players(){
+                window.location.href = "#playerdata";
+            }
+            function officialSite(){
+                window.open("https://iplt20.com","_blank");
+            }
+        </script>
+    </body>
+</html>

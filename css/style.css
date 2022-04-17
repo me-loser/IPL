@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box; }
+
+.header {
+    margin: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: radial-gradient(circle,#183888,white);
+  height: 90px
+}
+  
+.header img {
+    height: 50px;  
+    color: white;
+}
+
+.header a {
+   color: #e47021; 
+    text-decoration: none;
+}
+.header a:nth-child(3){
+    color: red;
+}
+.header a:hover{
+    transition: 0.75s ;
+    font-size: 30px;
+    color: green;
+}
+#headingoftable{
+    height: 70px;
+    margin-top: 10px;
+    background-color: red;
+   padding-top: 25px;
+    text-align: center;
+    background: linear-gradient(to bottom right,green,white);
+    border-style: groove;
+    border-radius: 40px 50px 10px 5px;
+    font-size: 30px; 
+    font-weight: bold;
+    font-style: oblique;
+}
+.pointsTable{
+    
+   display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    background: linear-gradient(to top right,#f46b20,white,#15760c);
+    border-bottom: 5px solid red;
+}
+.pointsTable div{
+    padding: 5px 0px;
+}
+#topics{
+    padding: 5px 50px;
+    border-right: 3px solid white;
+}
+#logo{
+
+   margin: 10px 0px;
+    padding-top: 10px;
+   
+}
+#Sno, #Sno1, #Sno2, #Sno3 ,#Sno4, #Sno5 ,#Sno6 ,#Sno7, #Sno8 ,#Sno9{
+    border-bottom: 3px solid white;
+} 
+
+.prr div{
+    padding-left: 50px;
+    background-color: #fa6aa2;
+    
+}
+.pkkr div{
+    padding-left: 50px;
+    background-color: #5743c0;
+    color: azure;
+    
+}
+.pgt div{
+    padding-left: 50px;
+    background-color: #42495f;
+    color: aquamarine;
+}
+.pdc div{
+    padding-left: 50px;
+    background-color: #2db8f7;
+}
+.plsg div{
+    padding-left: 50px;
+    background-color: #ade0cb;
+}
+.prcb div{
+    padding-left: 50px;
+    background-color: #8c2922;
+    color: floralwhite;
+}
+.ppbks div{
+    padding-left: 50px;
+    background-color: #f25575;
+}
+.pcsk div{
+    padding-left: 50px;
+    background-color: #a7aa55;
+}
+.pmi div{
+    padding-left: 50px;
+    background-color: #2e8dc0;
+}
+.psrh div{
+    padding-left: 50px;
+    background-color: #f4583a;
+}
+#playerdata{
+    margin-top: 5px;
+    height: 50px;
+    background: radial-gradient(circle,#303c7e,#fbebec);
+    text-align: center;
+    padding-top: 15px;
+    color: yellow;
+    font-weight: bold;
+    font-style: italic;
+}
+li{
+    list-style: none;
+    background-image: url("dash.png");
+    background-repeat: no-repeat;
+    background-position: 0px center;
+    margin: 5px;
+    padding-left: 30px;
+}
+#playernames div div{
+    background-image: url(square.png);
+    background-repeat: no-repeat;
+    background-position: 25px center;
+    border-bottom: 2px solid white;
+
+}
+
+
